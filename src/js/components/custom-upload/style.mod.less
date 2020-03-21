@@ -1,0 +1,199 @@
+.custom-upload {
+  display: inline-block;
+
+  .upload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .6);
+  
+    .info {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      width: 1000px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px 50px 30px;
+
+      &.hide {
+        animation: hide .3s ease forwards;
+      }
+
+      @keyframes hide {
+        from {top: 50%; right: 50%; opacity: 1; transform: translate(50%, -50%) scale(1, 1);}
+        to {top: 40px; right: 237px; opacity: .3; transform: translate(50%, -50%) scale(0, 0);}
+      }
+
+      &.show {
+        animation: show .5s ease-in forwards;
+      }
+
+      @keyframes show {
+        from {top: 40px; right: 237px; opacity: .3; transform: translate(50%, -50%) scale(0, 0);}
+        to {top: 50%; right: 50%; opacity: 1; transform: translate(50%, -50%) scale(1, 1);}
+      }
+  
+      .tit {
+        color: #4a4a4a;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+  
+      .click-upload {
+        margin-bottom: 20px;
+  
+        button {
+          margin-right: 20px;
+        }
+      }
+
+      .drag-tips {
+        text-align: center;
+        line-height: 40px;
+        padding: 40px 0;
+
+        h3 {
+          font-size: 18px;
+          margin-bottom: 20px;
+          font-weight: 700;
+
+          i {
+            font-size: 18px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #999999;
+          margin-bottom: 0;
+        }
+      }
+  
+      .files {
+        border: 1px dashed #74778B;
+        border-radius: 5px;
+        overflow-y: auto;
+        min-height: 262px;
+        max-height: 500px;
+        max-height: 50vh;
+        margin-bottom: 30px;
+        background-color: #f1f8ff;
+  
+        .li {
+          height: 64px;
+          border-bottom: 1px solid #edf1f6;
+          background-color: #f1f8ff;
+          display: flex;
+          align-items: center;
+          padding: 0 40px 0 95px;
+          font-size: 14px;
+          color: #999999;
+          background: url('https://cdn.damixia.cn/dmx-static/0.0.18/dist/images/teacher-assistant/pc/default.png') no-repeat 40px center;
+          background-size: 35px 40px;
+  
+          &:last-child {
+            // border-bottom: 0;
+          }
+
+          &.doc, &.docx {
+            background: url('https://cdn.damixia.cn/dmx-static/0.0.16/dist/images/teacher-assistant/pc/doc.png') no-repeat 40px center;
+            background-size: 35px 40px;
+          }
+          
+          &.pdf {
+            background: url('https://cdn.damixia.cn/dmx-static/0.0.16/dist/images/teacher-assistant/pc/pdf.png') no-repeat 40px center;
+            background-size: 35px 40px;
+          }
+          
+          &.ppt, &.pptx {
+            background: url('https://cdn.damixia.cn/dmx-static/0.0.16/dist/images/teacher-assistant/pc/ppt.png') no-repeat 40px center;
+            background-size: 35px 40px;
+          }
+          
+          &.mp3, &.m4a {
+            background: url('https://cdn.damixia.cn/dmx-static/0.0.16/dist/images/teacher-assistant/pc/audio.png') no-repeat 40px center;
+            background-size: 35px 40px;
+          }
+
+          &.mp4, &.mov {
+            background: url('https://cdn.damixia.cn/dmx-static/0.0.18/dist/images/teacher-assistant/pc/video_icon.png') no-repeat 40px center;
+            background-size: 35px 40px;
+          }
+  
+          .img {
+            width: 400px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #595959;
+          }
+  
+          .speed {
+            width: 100px;
+            text-align: center;
+          }
+  
+          .progress {
+            width: 220px;
+  
+            .percent {
+              width: 100px;
+              height: 4px;
+              background-color: #e2e2e2;
+              position: relative;
+              top: -4px;
+              border-radius: 2px;
+              font-size: 12px;
+              line-height: 30px;
+  
+              .percent-now {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: #3276ff;
+              }
+            }
+  
+            .error {
+              color: #fe7492;
+            }
+          }
+  
+          .status {
+            width: 16px;
+            height: 17px;
+  
+            &.done {
+              background: url(../../../images/files/success.png) no-repeat center;
+            }
+  
+            &.error {
+              cursor: pointer;
+              background: url(../../../images/files/fail.png) no-repeat center;
+            }
+          }
+        }
+      }
+  
+      :global(.ant-upload-list-item) {
+        display: none;
+      }
+    }
+
+    .close {
+      text-align: center;
+
+      button {
+        margin: 0 20px;
+      }
+    }
+  }
+}

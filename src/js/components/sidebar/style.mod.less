@@ -1,0 +1,117 @@
+.sidebar {
+  width: 250px;
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+  position: absolute;
+  left: -250px;
+  top: 0;
+  bottom: 0;
+
+  .sidebar-item {
+    height: 73.9px;
+    font-size: 14px;
+    color: #595959;
+    padding-left: 73px;
+    box-sizing: border-box;
+    line-height: 73.9px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #F1F8FF !important;
+      //border: 1px solid #E6E6E6;
+      border-right: none;
+    }
+  }
+
+  .active-side {
+    background-color: #F1F8FF !important;
+    border: 1px solid #E6E6E6;
+    border-right: none;
+  }
+
+  .all {
+    background-size: 26px 24px;
+    background: url(../../images/library/all1.png) 32px center no-repeat;
+    &:hover {
+      background: url(../../images/library/all.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.all {
+    background: url(../../images/library/all.png) 32px center no-repeat; 
+  }
+
+  .delete {
+    background-size: 25px 26px;
+    background: url(../../images/library/delete1.png) 32px center no-repeat; 
+    &:hover {
+      background: url(../../images/library/delete.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.delete {
+    background: url(../../images/library/delete.png) 32px center no-repeat;
+  }
+
+  .img {
+    background-size: 24px 21px;
+    background: url(../../images/library/img2.png) 32px center no-repeat; 
+    &:hover {
+      background: url(../../images/library/img1.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.img {
+    background: url(../../images/library/img1.png) 32px center no-repeat;
+  }
+
+  .audio {
+    background-size: 21px 26px;
+    background: url(../../images/library/audio1.png) 32px center no-repeat; 
+    &:hover {
+      background: url(../../images/library/audio.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.audio {
+    background: url(../../images/library/audio.png) 32px center no-repeat;
+  }
+
+  .video {
+    background-size: 26px 25px;
+    background: url(../../images/library/video1.png) 32px center no-repeat; 
+    &:hover {
+      background: url(../../images/library/video.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.video {
+    background: url(../../images/library/video.png) 32px center no-repeat;
+  }
+
+
+  .document {
+    background-size: 24px 24px;
+    background: url(../../images/library/document1.png) 32px center no-repeat; 
+    &:hover {
+      background: url(../../images/library/document.png) 32px center no-repeat;
+    }
+  }
+
+  .active-side.document {
+    background: url(../../images/library/document.png) 32px center no-repeat;
+  }
+  
+  .link {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .progress {
+    padding: 0 32px 0 30px;
+    font-size: 14px;
+    color: #999999;
+  }
+}

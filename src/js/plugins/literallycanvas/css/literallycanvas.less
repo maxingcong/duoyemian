@@ -1,0 +1,599 @@
+.literally .button-style-1 {
+	border: 2px solid transparent;
+	border-radius: 3px
+}
+
+.literally .button-style-1 {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.literally .button-style-1.selected:not(.disabled) {
+	background-color: #a1d9fe
+}
+
+.literally .button-style-1:hover:not(.disabled) {
+	border-color: #a1d9fe
+}
+
+.literally .button-style-1.disabled {
+	cursor: default;
+	opacity: 0.3
+}
+
+.literally.toolbar-at-top .lc-drawing {
+	bottom: 0;
+	top: 31px
+}
+
+.literally.toolbar-at-top .lc-options {
+	top: 0;
+	border-bottom: 1px solid #555
+}
+
+.literally.toolbar-at-bottom .lc-drawing {
+	bottom: 31px;
+	top: 0
+}
+
+.literally.toolbar-at-bottom .lc-options {
+	bottom: 0;
+	border-top: 1px solid #555
+}
+
+.literally.toolbar-hidden .lc-drawing {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0
+}
+
+.literally.toolbar-hidden .lc-options,.literally.toolbar-hidden .lc-picker {
+	display: none
+}
+
+.literally {
+	position: relative;
+	background-color: rgba(0, 0, 0, .8);
+  min-height: 400px;
+  height: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-ms-touch-action: none;
+	user-select: none
+}
+
+.literally,.literally * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.literally>* {
+	position: absolute
+}
+
+.literally .lc-picker {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 61px;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.literally .lc-drawing {
+	right: 0;
+	left: 0;
+	bottom: 0;
+	left: 0
+}
+
+.literally .lc-drawing>* {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0
+}
+
+.literally .lc-drawing.with-gui {
+	right: 0;
+	left: 61px;
+	cursor: default
+}
+
+.literally .lc-drawing.with-gui .polygon-toolbar {
+	top: auto;
+	height: 31px
+}
+
+.literally .lc-drawing.with-gui .polygon-toolbar .polygon-toolbar-button {
+	float: left
+}
+
+.literally .lc-drawing.with-gui .text-tool-input:focus {
+	outline: none
+}
+
+.literally .lc-picker {
+	z-index: 1001;
+	border-right: 1px solid #555
+}
+
+.literally .lc-picker .toolbar-button {
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	margin: 2px;
+	padding: 0;
+	cursor: pointer;
+	text-align: center;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	
+	
+		&.lc-tool-Pencil {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_01.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-color: transparent;
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_01_hover.png)!important;
+			}
+		}
+		
+		&.lc-tool-Line, &.lc-tool-Polygon, &.lc-tool-Eyedropper {
+			display: none;
+		}
+	
+		&.lc-tool-Text {
+			width: 60px;
+			height: 46px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_02.png) no-repeat center!important;
+			background-size: auto 24px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_02_hover.png)!important;
+			}
+		}
+	
+		&.lc-tool-Rectangle {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_03.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_03_hover.png)!important;
+			}
+		}
+	
+		&.lc-tool-Ellipse {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_04.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_04_hover.png)!important;
+			}
+		}
+	
+		&.lc-tool-Cross {
+			width: 60px;
+			margin: 0;
+			height: 42px;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_05.png) no-repeat center!important;
+			background-size: auto 22px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_05_hover.png)!important;
+			}
+		}
+	
+		&.lc-tool-Tick {
+			width: 60px;
+			margin: 0;
+			height: 33px;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_06.png) no-repeat center!important;
+			background-size: auto 17px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_06_hover.png)!important;
+			}
+		}
+	
+		&.lc-tool-Eraser {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_07.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_07_hover.png)!important;
+			}
+		}
+	
+		&.h {
+			height: 43px;
+			margin-bottom: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_08.png) no-repeat center;
+			background-size: auto 23px;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_08_hover.png);
+			}
+		}
+	
+		&.i {
+			height: 43px;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_09.png) no-repeat center;
+			background-size: auto 23px;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_09_hover.png);
+			}
+		}
+	
+		// &[title="Pan"] {
+		// 	width: 60px;
+		// 	height: 47px;
+		// 	margin: 0;
+		// 	background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_10.png) no-repeat center!important;
+		// 	background-size: auto 23px!important;
+	
+		// 	&.selected {
+		// 		background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_10_hover.png)!important;
+		// 	}
+		// }
+
+		&.lc-tool-Pan {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_10.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_10_hover.png)!important;
+			}
+		}
+
+		&.lc-redo {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_11.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_11_hover.png)!important;
+			}
+		}
+
+		&.lc-undo {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_12.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_12_hover.png)!important;
+			}
+		}
+
+		&.lc-zoom-out {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_13.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_13_hover.png)!important;
+			}
+		}
+
+		&.lc-zoom-in {
+			width: 60px;
+			height: 45px;
+			margin: 0;
+			background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_14.png) no-repeat center!important;
+			background-size: auto 23px!important;
+	
+			&.selected {
+				background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_14_hover.png)!important;
+			}
+		}
+
+		
+}
+
+@media screen and (max-height: 620px) {
+	.literally .lc-picker .toolbar-button {
+		&.lc-tool-Pencil, &.lc-tool-Eraser, &.lc-tool-Line, &.lc-tool-Rectangle,
+		&.lc-tool-Ellipse, &.lc-tool-Text, &.lc-tool-Cross, &.lc-tool-Tick,
+		&.lc-tool-Polygon, &.lc-tool-Pan, &.lc-tool-Eyedropper{
+			transform: scale(.7) translateY(-60%);
+		}
+
+		&.lc-tool-Pencil {
+			transform: scale(.7);
+		}
+	}
+	
+	// .color-well, .lc-undo, .lc-redo, .lc-zoom-out, .lc-zoom-in, .lc-clear {
+	// 	transform: scale(.7) translateY(50%);
+	// }
+
+	// .lc-clear {
+	// 	transform: scale(.7);
+	// }
+
+	.lc-picker-contents > div:last-child {
+		transform: scale(.7) translateY(20%);
+	}
+}
+
+.literally .lc-picker .toolbar-button {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.literally .lc-picker .toolbar-button.selected:not(.disabled) {
+	background-color: #a1d9fe
+}
+
+.literally .lc-picker .toolbar-button:hover:not(.disabled) {
+	// border-color: #a1d9fe
+}
+
+.literally .lc-picker .toolbar-button.disabled {
+	cursor: default;
+	opacity: 0.3
+}
+
+.literally .lc-picker .thin-button {
+	cursor: pointer;
+	float: left;
+	position: relative
+}
+
+.literally .lc-picker .fat-button {
+	clear: both;
+	width: 60px;
+	height: 45px;
+	margin: 0;
+	text-indent: -9999px;
+	background: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_08.png) no-repeat center;
+	background-size: auto 23px;
+	
+	&.selected {
+		background-image: url(//cdn.damixia.cn/dmx-static/0.0.16/dist/images/modifyphoto/icon_08_hover.png);
+	}
+}
+
+.literally .lc-picker .lc-pick-tool,.literally .lc-picker .lc-undo,.literally .lc-picker .lc-redo,.literally .lc-picker .lc-zoom-in,.literally .lc-picker .lc-zoom-out {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center
+}
+
+.literally .color-well {
+	font-size: 10px;
+	width: 60px;
+	// display: none;
+	color: #fff;
+	margin-bottom: 5px;
+	font-size: 12px;
+	display: none;
+
+	&:first-child {
+		display: block;
+	}
+}
+
+.literally .color-well.open {
+	// background-color: #a1d9fe
+}
+
+.literally .color-well-color-container {
+	border: 2px solid transparent;
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	margin: 1px auto;
+	overflow: visible
+}
+
+.literally .color-well-color-container {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.literally .color-well-color-container.selected:not(.disabled) {
+	background-color: #a1d9fe
+}
+
+.literally .color-well-color-container:hover:not(.disabled) {
+	// border-color: #a1d9fe
+}
+
+.literally .color-well-color-container.disabled {
+	cursor: default;
+	opacity: 0.3
+}
+
+.literally .color-well-color-container .color-well-checker {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background-color: black
+}
+
+.literally .color-well-color-container .color-well-checker-top-left {
+	border-top-left-radius: 3px
+}
+
+.literally .color-well-color-container .color-well-checker-bottom-right {
+	border-bottom-right-radius: 3px
+}
+
+.literally .color-well-color-container .color-well-color {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 3px
+}
+
+.literally .color-picker-popup {
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid #555;
+	left: 60px;
+	bottom: 31px
+}
+
+.literally .color-picker-popup .color-row {
+	clear: both
+}
+
+.literally .color-picker-popup .color-row .color-cell {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	float: left
+}
+
+.literally .color-picker-popup .color-row .color-cell:hover,.literally .color-picker-popup .color-row .color-cell.selected {
+	border: 1px solid #555;
+	line-height: 18px
+}
+
+.literally .color-picker-popup .color-row .color-cell.transparent-cell {
+	width: 100%
+}
+
+.literally .horz-toolbar {
+	height: 31px;
+	background-color: #f0f0f0;
+}
+
+.literally .horz-toolbar .label {
+	line-height: 30px;
+	margin: 0 0.25em 0 0.25em;
+	font-size: 12px
+}
+
+.literally .horz-toolbar span {
+	line-height: 30px;
+	margin: 0 0.25em 0 0.25em;
+	font-size: 12px;
+	float: left
+}
+
+.literally .horz-toolbar .square-toolbar-button {
+	border: 2px solid transparent;
+	border-radius: 3px;
+	margin: 4px 5px;
+	border: 1px solid #aaa;
+	width: 20px;
+	height: 20px;
+	float: left;
+	position: relative
+}
+
+.literally .horz-toolbar .square-toolbar-button svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(.5, .5);
+}
+
+.literally .horz-toolbar .square-toolbar-button {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.literally .horz-toolbar .square-toolbar-button.selected:not(.disabled) {
+	background-color: #a1d9fe
+}
+
+.literally .horz-toolbar .square-toolbar-button:hover:not(.disabled) {
+	border-color: #a1d9fe
+}
+
+.literally .horz-toolbar .square-toolbar-button.disabled {
+	cursor: default;
+	opacity: 0.3
+}
+
+.literally .horz-toolbar .square-toolbar-button img {
+	max-width: 100%;
+	max-height: 100%
+}
+
+.literally .horz-toolbar .square-toolbar-button label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	line-height: 26px;
+	margin: auto;
+	float: none;
+	text-align: center
+}
+
+.literally .polygon-toolbar {
+	position: absolute;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	width: 100%
+}
+
+.literally.toolbar-at-bottom .polygon-toolbar {
+	top: -100%
+}
+
+.literally.toolbar-at-top .polygon-toolbar {
+	top: 100%
+}
+
+.literally .lc-options {
+	z-index: 1;
+	right: 0;
+	left: 61px
+}
+
+.literally .lc-options .lc-font-settings {
+	height: 30px;
+	line-height: 31px;
+	padding-left: 4px;
+	background-color: #f5f5f5
+}
+
+.literally .lc-options .lc-font-settings input {
+	margin: 0 0.5em 0 0
+}
+
+.literally .lc-options .lc-font-settings input[type=checkbox] {
+	margin: 0 0.5em 0 0.5em
+}

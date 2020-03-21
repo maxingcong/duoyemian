@@ -1,0 +1,12 @@
+{
+    "extends": "wox",
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "globals": {
+        "__DEV__": true
+    }
+}

@@ -1,0 +1,177 @@
+.header {
+  .header-nav {
+    height: 80px;
+    position: relative;
+    padding: 0 44px 0 23.8px;
+    background: url(../../images/header/back.png) center center no-repeat;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+
+    .logo {
+      width: 145px;
+      height: 80px;
+      background-size: 145px 44px;
+      background: url(../../images/logo.png) center center no-repeat;
+      margin-right: 105px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .nav-left {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 40px;
+      .nav-l-item {
+        display: inline-block;
+        font-size: 22px;
+        color: #777777;
+        height: 80px;
+        line-height: 80px;
+        position: relative;
+        margin-right: 104px;
+        cursor: pointer;
+        .line {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 5px;
+          border-radius: 25px;
+          background: #3276FF;
+          display: none;
+        }
+        &:hover {
+          color: #4A4A4A;
+          .link {
+            color: #4A4A4A;
+          }
+          .line {
+            display: block;
+          }
+        }
+      }
+
+      .active-nav {
+        color: #4A4A4A;
+        .line {
+          display: block;
+        }
+      }
+
+      .link {
+        color: #777777;
+      }
+    }
+
+    .nav-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      line-height: 80px;
+      vertical-align: middle;
+
+      .nav-item {
+        font-size: 16px;
+        color: #999999;
+        margin-right: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+
+        .uploadStatus {
+          width: 20px;
+          height: 20px;
+          background-size: 20px 20px;
+          position: absolute;
+          top: 18px;
+          right: -20px;
+          transform: scale(0.5, 0.5);
+        }
+        .ongoing {
+          background: url(../../images/library/ongoing.png) no-repeat;
+        }
+        .complete {
+          background: url(../../images/library/complete.png) no-repeat;
+        }
+        .abnormal {
+          background: url(../../images/library/abnormal.png) no-repeat;
+        }
+      }
+
+      .icon {
+        vertical-align: middle;
+        display: inline-block;
+        top: -2px;
+        position: relative;
+      }
+      .flie {
+        .flie-icon {
+          width: 21px;
+          height: 18px;
+          background-size: 21px 18px;
+          background: url(../../images/header/file1.png) no-repeat;
+          margin-right: 10.7px;
+        }
+        &:hover {
+          color: #356AF7;
+          .flie-icon {
+            background: url(../../images/header/file.png) no-repeat;
+          }
+        }
+      }
+     
+      .notice {
+        .notice-icon {
+          width: 16px;
+          height: 19px;
+          background-size: 16px 19px;
+          background: url(../../images/header/bell1.png) no-repeat;
+          margin-right: 9.1px;
+        }
+
+        &:hover {
+          color: #356AF7;
+          .notice-icon {
+            background: url(../../images/header/bell.png) no-repeat;
+          }
+        }
+      }
+
+      .setting {
+        .setting-icon {
+          width: 18px;
+          height: 17px;
+          background-size: 18px 17px;
+          background: url(../../images/header/setting1.png) no-repeat;
+          margin-right: 5.8px;
+        }
+
+        &:hover {
+          color: #356AF7;
+          .setting-icon {
+            background: url(../../images/header/setting.png) no-repeat;
+          }
+        }
+      }
+
+      .out {
+        .out-icon {
+          width: 16px;
+          height: 16px;
+          background-size: 16px 16px;
+          background: url(../../images/header/out1.png) no-repeat;
+          margin-right: 9px;
+        }
+
+        &:hover {
+          color: #356AF7;
+          .out-icon {
+            background: url(../../images/header/out.png) no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.details {
+  padding: 0 37px 38px;
+  font-family:Microsoft YaHei, PingFangSC-Regular;
+  box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.10) !important;
+  position: relative;
+  //min-height: 500px;
+
+  .work-details {
+    //border-bottom: 1px solid #D9D9D9;
+   }
+
+  .work-list-title {
+    height: 75.5px;
+    line-height: 75.5px;
+    vertical-align: middle;
+    color: #595959;
+    //padding-left: 37px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6E6E6;
+    position: relative;
+
+    >div {
+      display: inline-block;
+    }
+
+    .head-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      display: inline-block;
+    }
+
+    .flowerNum {
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      background: #FFFFFF;
+      box-shadow: 0 0 10px 0 rgba(74,121,247,0.10);
+      border-radius: 14px;
+      color: #FF609D;
+      vertical-align: middle;
+      width: 61px;
+      font-size: 14px;
+
+      .flower-icon {
+        display: inline-block;
+        width: 17px;
+        height: 16px;
+        background: 17px 16px;
+        background: url(../../../../images/flower_small.png) no-repeat;
+        vertical-align: middle;
+        margin-right: 2.5px;
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    .create-time {
+      font-size: 14px;
+      color: #999999;
+      margin-left: 32px;
+      vertical-align: middle;
+    }
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px 0 12px;
+    }
+  
+    .work-tab {
+      position: absolute;
+      width: 212px;
+      margin: auto;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      .work-tab-item {
+        width: 106px;
+        display: inline-block;
+        height: 32px;
+        text-align: center;
+        font-size: 14px;
+        color: #595959;
+        line-height: 30px;
+        box-sizing: border-box;
+        border: 1px solid #D9D9D9;
+        cursor: pointer;
+
+        &:hover {
+          border-color: #356AF7;
+        }
+      }
+
+      .waiting {
+        border-right-color: #356AF7;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .already {
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .active {
+        color: #356AF7;
+        border-color: #356AF7;
+      }
+
+      
+    }
+  }
+
+  .details-content {
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+    border-radius: 6px 10px 10px 10px;
+    width: 100%;
+    margin-top: 34px;
+    box-sizing: border-box;
+    padding: 18px 24px;
+  }
+ 
+  .img-block {
+    margin-top: 30px;
+    padding-bottom: 15px;
+
+    .translate-btn {
+      width: 142px;
+      height: 60px;
+      background: url(../../../../images/trann.png) no-repeat;
+      background-size: 142px 60px;
+      cursor: pointer;
+    }
+
+    .img-item {
+      width: 90px;
+      height: 90px;
+      border-radius: 5px;
+      margin-right: 23.5px;
+      display: inline-block;
+      margin-bottom: 14px;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+      cursor: pointer;
+    }
+
+    .img-tips {
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  .audio-item {
+    margin-top: 30px;
+  }
+
+  .btn-container {
+    margin: 15px 0 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 22px;
+
+    .btn-item {
+      background: #356AF7;
+      box-shadow: 0 2px 0 0 rgba(0,0,0,0.08);
+      border-radius: 4px;
+      width: 170px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 17px;
+      color: #FFFFFF;
+      margin: 0 15px;
+      cursor: pointer;
+
+      &:hover {
+        background: #4D7EFF;
+      }
+    }
+
+    .cancel-btn {
+      background: #ADC4FF;
+    }
+  }
+
+  .tips {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+  }
+
+  .marked {
+    position: absolute;
+    right: 64px;
+    top: 0px;
+    width: 104px;
+    height: 110px;
+    background-size: 104px 110px;
+    background: url(../../../../images/marked.png) no-repeat;
+    transform: scale(0.8,0.8);
+  }
+}
+
+
+.results-tab {
+  min-height: 60px;
+  font-size: 0;
+  line-height: 60px;
+  vertical-align: middle;
+  z-index: 10;
+  position: relative;
+
+  .results-tab-item {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 14px;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    color: #595959;
+
+    .line {
+      background: #356AF7;
+      border-radius: 25px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      margin: auto;
+      height: 4px;
+      display: none;
+    }
+  }
+
+  .active-tab-item {
+    color: #356AF7;
+    font-weight: bold;
+    .line {
+      display: block;
+    }
+  }
+
+  .already-btn {
+    position: absolute;
+    font-size: 14px;
+    right: 3.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 110px;
+    text-align: center;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    color:#595959;
+    &:hover {
+      border: 1px solid #356AF7;
+      color: #356AF7 !important;
+    }
+  }
+  
+  .active-already-btn {
+    border: 1px solid #356AF7 !important;
+    color: #356AF7 !important;
+  }
+}
+

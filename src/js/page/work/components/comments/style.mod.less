@@ -1,0 +1,218 @@
+.comments-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+
+  .comments {
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+
+    .textArea {
+      margin-bottom: 25px;
+      min-height: 200px;
+      border: 1px solid #C2C2C5;
+    }
+
+    .close {
+      position: absolute;
+      right: -30px;
+      top: -20px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      background: url(../../../../images/close.png) center center;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .submit-btn {
+      margin: 17px auto 0;
+      width: 170px;
+      height: 40px;
+      font-size: 18px;
+      color: #FFFFFF;
+      border-radius: 10px;
+      background: #356AF7;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+
+      &:hover {
+        background: #4D7EFF;
+      }
+    }
+
+    .tempComments {
+      margin: 20px 0 45px;
+      font-size: 0;
+      max-height: 250px;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      .tags {
+        padding: 0 10px;
+        display: inline-block;
+        margin-right: 28px;
+        font-size: 14px;
+        padding: 0 20px 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 10px;
+        color: #373D52;
+        vertical-align: middle;
+        background: rgba(255, 255, 255, .8);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+        border-radius: 14.5px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        border-style: hidden !important;
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+
+        :global {
+          .anticon-close {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+          }
+        }
+        .close-img {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-size: 20px 20px;
+          background: url('../../../../images/close.png') no-repeat;
+        }
+      }
+
+      .input {
+        width: auto;
+        text-align: left;
+      }
+    }
+  }
+}
+
+
+.item-img-c {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 13.3px;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 13.3px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  .item-img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .close-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-size: 20px 20px;
+    background: url(../../../../images/close.png) center center;
+    cursor: pointer;
+  }
+} 
+
+
+.upload-box {
+  width: 60px;
+  height: 60px;
+  border: 1px dashed #d9d9d9;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 12px;
+
+  &:hover {
+    border-color: #1890ff;
+  }
+
+  .input-file {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 10;
+  }
+  
+  .upload-icon{
+    width: 100%;
+    height: 100%;
+    // display: table-cell;
+    // text-align: center;
+    // vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: 32px 32px;
+    background: url(../../../../images/add.jpg) center center no-repeat;
+    
+    text-align: center;
+    
+    .anticon-plus {
+      font-size: 32px;
+      color: #999;
+    }
+    .anticon-plus:before {
+      content: "+";
+      display: block;
+      font-family: "anticon"!important;
+    }
+  }
+
+  .uploadImg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    left: 0;
+    top: 0;
+  }
+}
+
+.close-img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 25px;
+}

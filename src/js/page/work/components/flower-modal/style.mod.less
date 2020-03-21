@@ -1,0 +1,101 @@
+.flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-family:Microsoft YaHei;
+  z-index: 1000;
+
+  .flower-main {
+    position: absolute;
+    width: 700px;
+    height: 540px;
+    background: #fff;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    padding-top: 168px;
+    box-sizing: border-box;
+
+    .flower-body {
+      font-size: 0;
+      text-align: center;
+      position: relative;
+
+      .flower-item {
+        display: inline-block;
+        width: 50px;
+        cursor: pointer;
+        margin: 0 20px;
+        font-size: 14px;
+        color: #373D52;
+
+        .flower-item-img {
+          width: 50px;
+          height: 47px;
+          margin-bottom: 23.8px;
+          background-size: 50px 47px;
+          background: url(../../../../images/flower_gray.png) no-repeat;
+        }
+        .active-img {
+          background: url(../../../../images/flower.png) no-repeat;
+        }
+        .flower-item-img1 {
+          width: 50px;
+          height: 47px;
+          margin-bottom: 23.8px;
+          background-size: 43px 35px;
+          background: url(../../../../images/flower_gray1.png) center center no-repeat;
+        }
+        .active-img1 {
+          background-size: 43px 35px;
+          background: url(../../../../images/flower1.png)center center no-repeat;
+        }
+      }
+
+      .flower-c {
+        margin-top: 25px;
+      }
+    }
+
+    .close {
+      position: absolute;
+      right: -30px;
+      top: -20px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      background: url(../../../../images/close.png) center center;
+      cursor: pointer;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      width: 170px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background: #356AF7;
+      box-shadow: 0 2px 0 0 rgba(0,0,0,0.08);
+      border-radius: 4px;
+      font-size: 18px;
+      color: #FFFFFF;
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      cursor: pointer;
+      
+      &:hover {
+        background: #4D7EFF;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.content {
+  .document-table {
+    padding: 20px 0;
+  }
+
+  .button-c {
+    line-height: 32px;
+  }
+
+  .clear-btn {
+    :global {
+      span {
+        margin-left: 4px !important;
+      }
+    }
+
+    .clear {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      vertical-align: middle;
+      background-size: 21px 21px;
+      background: url(../../../../images/library/clear.png) no-repeat;
+      transform: scale(0.7,0.7);
+      top: -1px;
+      position: relative;
+    }
+  }
+ 
+  .tips {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 5px;
+  }
+  .thumbnail {
+    width: 35px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  .file-name {
+    white-space: normal;
+  }
+}
+
+:global {
+  .thumbnail-col {
+    box-sizing: border-box;
+    padding-right: 0 !important;
+  }
+
+  .file-name {
+    overflow: hidden;
+  }
+}

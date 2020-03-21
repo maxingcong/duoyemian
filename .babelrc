@@ -1,0 +1,29 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["> 1%", "not ie <= 8"]
+      },
+      "loose": true
+    }],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    [
+      "import", {
+        "style": true,
+        "libraryName": "antd"
+      }
+    ],
+    [
+      "transform-runtime", {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ]
+  ]
+}

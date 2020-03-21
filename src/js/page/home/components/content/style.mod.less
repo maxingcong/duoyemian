@@ -1,0 +1,138 @@
+@gray: #666;
+
+.home {
+  display: flex;
+  height: 100vmin;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: @gray;
+  // background-color: #fff;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 43px;
+    height: 48px;
+    background: url(../../../../../images/home/logo.png) no-repeat center;
+    background-size: 43px 48px;
+  }
+
+  .login {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 620px;
+    height: 539px;
+    background: url(../../../../../images/home/login-bg.png) no-repeat center;
+
+    .info {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 290px;
+      text-align: center;
+
+      .img {
+        width: 194px;
+        height: 194px;
+        margin: 0 auto .5em;
+        position: relative;
+
+        img {
+          width: 194px;
+          height: 194px;
+        }
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 40px;
+          height: 40px;
+          font-size: 14px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 4px;
+          background-color: #fff;
+          box-shadow: 0 0 1px 2px #f0f0f0;
+        }
+      }
+
+      .success {
+        width: 200px;
+        height: 60px;
+        margin: 0 auto .5em;
+
+        .tips {
+          height: 60px;
+          background-color: #4B91E3;
+          color: #fff;
+          border-radius: 30px;
+          color: #FFED87;
+
+          .th {
+            font-size: 20px;
+            line-height: 20px;
+            padding-top: 10px;
+            margin-bottom: 5px;
+          }
+
+          .td {
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: normal;
+        color: #999;
+      }
+
+      h4 {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 14px;
+        color: #999;
+
+        font {
+          color: #4B91E3;
+        }
+      }
+    }
+  }
+
+  .warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fffbe6;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    padding: 8px 15px 8px 37px;
+    color: #ff0000;
+
+    a {
+      display: inline-block;
+      background-color: #1890ff;
+      color: #fff;
+      border-radius: 3px;
+      margin-left: 10px;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+  }
+}
+
+

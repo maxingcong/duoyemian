@@ -1,0 +1,27 @@
+.library-contianer {
+  min-height: 100vh;
+  background-size: 100% 181px;
+  font-family:Microsoft YaHei, PingFangSC-Regular;
+  display: flex;
+  flex-flow: column;
+}
+
+.library-body {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  margin-left: 250px;
+}
+
+.library-main {
+  padding: 25.5px 35px;
+}
+
+:global {
+  .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: #F1F8FF !important;
+  }
+  .ant-table-wrapper {
+    border-top: 1px solid #e8e8e8;
+  }
+}

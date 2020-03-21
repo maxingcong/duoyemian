@@ -1,0 +1,64 @@
+.content {
+
+  .tabs {
+    margin-top: 23px;
+    border-bottom: 1px solid #E6E6E6;
+
+    .tab-item {
+      font-size: 14px;
+      color: #777777;
+      display: inline-block;
+      margin-right: 81px;
+      cursor: pointer;
+      padding-bottom: 5px;
+      position: relative;
+
+      &:hover {
+        color: #4A4A4A;
+        .line {
+          display: block;
+        }
+      }
+
+      .line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background: #3276FF;
+        border-radius: 25px;
+        display: none;
+      }
+    }
+
+    .activeTab {
+      color: #4A4A4A;
+      font-weight: bold;
+      .line {
+        display: block;
+      }
+    }
+  }
+
+  .document-table {
+    padding: 20px 0;
+  }
+
+  .thumbnail {
+    width: 35px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  :global {
+    .thumbnail-col {
+      box-sizing: border-box;
+      padding-right: 0 !important;
+    }
+
+    .file-name {
+      overflow: hidden;
+    }
+  }
+}

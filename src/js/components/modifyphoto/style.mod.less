@@ -1,0 +1,266 @@
+.modifyphoto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
+
+  .modify {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    right: 0;
+    bottom: 0;
+
+    .modify-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      // background-color: #fff;
+
+      canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.canvas-img {
+          z-index: 0;
+        }
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 10px;
+
+      span {
+        display: inline-block;
+        width: 255px;
+        height: 40px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 40px;
+        margin: 0 40px;
+        background-color: #356AF7;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .tools {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+    .ul {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 90px;
+      transform: translateY(-50%);
+      list-style: none;
+      padding: 0;
+
+      li {
+        width: 90px;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &.a {
+          height: 47px;
+          background: url(../../../images/modifyphoto/icon_01.png) no-repeat center;
+          background-size: auto 23px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_01_hover.png);
+          }
+        }
+
+        &.b {
+          height: 48px;
+          background: url(../../../images/modifyphoto/icon_02.png) no-repeat center;
+          background-size: auto 24px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_02_hover.png);
+          }
+        }
+
+        &.c {
+          height: 47px;
+          background: url(../../../images/modifyphoto/icon_03.png) no-repeat center;
+          background-size: auto 23px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_03_hover.png);
+          }
+        }
+
+        &.d {
+          height: 47px;
+          background: url(../../../images/modifyphoto/icon_04.png) no-repeat center;
+          background-size: auto 23px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_04_hover.png);
+          }
+        }
+
+        &.e {
+          height: 44px;
+          background: url(../../../images/modifyphoto/icon_05.png) no-repeat center;
+          background-size: auto 22px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_05_hover.png);
+          }
+        }
+
+        &.f {
+          height: 35px;
+          background: url(../../../images/modifyphoto/icon_06.png) no-repeat center;
+          background-size: auto 17px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_06_hover.png);
+          }
+        }
+
+        &.g {
+          height: 47px;
+          background: url(../../../images/modifyphoto/icon_07.png) no-repeat center;
+          background-size: auto 23px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_07_hover.png);
+          }
+        }
+
+        &.h {
+          height: 47px;
+          margin-bottom: 0;
+          background: url(../../../images/modifyphoto/icon_08.png) no-repeat center;
+          background-size: auto 23px;
+
+          &.cur {
+            background-image: url(../../../images/modifyphoto/icon_08_hover.png);
+          }
+        }
+      }
+    }
+  }
+
+  .line-style {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+
+    h3 {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .colors {
+      padding-top: 100px;
+  
+      span {
+        display: block;
+        margin: 0 auto 20px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+  
+        &.a {
+          background-color: #ff2727;
+        }
+  
+        &.b {
+          background-color: #ffff00;
+        }
+  
+        &.c {
+          background-color: #356af7;
+        }
+  
+        &.d {
+          background-color: #000000;
+        }
+  
+        &.cur {
+          border: 2px solid #fff;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .width {
+      padding-top: 50px;
+
+      span {
+        display: block;
+        margin: 0 auto 20px;
+        width: 20px;
+        box-sizing: content-box;
+        cursor: pointer;
+
+        &.a {
+          height: 2px;
+        }
+  
+        &.b {
+          height: 3px;
+        }
+  
+        &.c {
+          height: 4px;
+        }
+  
+        &.d {
+          height: 5px;
+        }
+
+        &.e {
+          height: 6px;
+        }
+
+        &.cur {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+  
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 29px;
+    height: 30px;
+    cursor: pointer;
+    background: url(../../../images/modifyphoto/close.png) no-repeat center;
+    background-size: 20px 20px;
+  }
+}
