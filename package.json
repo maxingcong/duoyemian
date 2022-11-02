@@ -65,7 +65,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "browser-sync": "^2.16.0",
     "chalk": "^2.3.2",
-    "cos-js-sdk-v5": "^0.5.22",
+    "cos-js-sdk-v5": "^1.4.10",
     "css-loader": "^0.25.0",
     "eslint": "^3.19.0",
     "eslint-config-wox": "*",
