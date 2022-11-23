@@ -63,7 +63,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
-    "browser-sync": "^2.16.0",
+    "browser-sync": "^2.27.10",
     "chalk": "^2.3.2",
     "cos-js-sdk-v5": "^0.5.22",
     "css-loader": "^0.25.0",
@@ -87,7 +87,7 @@
     "style-loader": "^0.20.0",
     "url-loader": "^1.0.0",
     "webpack": "^3.0.0",
-    "webpack-dashboard": "^1.0.2",
+    "webpack-dashboard": "^3.3.7",
     "webpack-dev-middleware": "^2.0.0",
     "webpack-hot-middleware": "^2.12.2"
   },
