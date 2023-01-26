@@ -63,7 +63,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
-    "browser-sync": "^2.16.0",
+    "browser-sync": "^2.27.11",
     "chalk": "^2.3.2",
     "cos-js-sdk-v5": "^0.5.22",
     "css-loader": "^0.25.0",
